@@ -254,7 +254,7 @@ Run ipconfig and see if you see any IPv6 addresses. If you have IPv6 enabled, tr
   
  "
  
- racerouting is a way to determine which routers are involved in sending a packet from system A to B. Knowing which routers our packets take can be useful both better understanding our networks and also in understanding the attack surface. A router is responsible for routing the package in the right direction. Imagine this as driving on a road, where road signs at intersections guide you to the destination. These signs at intersections  represent routers. Traceroute identify these signs and intersections and tells you how far away they are, measured in milliseconds (ms).
+ Tracerouting is a way to determine which routers are involved in sending a packet from system A to B. Knowing which routers our packets take can be useful both better understanding our networks and also in understanding the attack surface. A router is responsible for routing the package in the right direction. Imagine this as driving on a road, where road signs at intersections guide you to the destination. These signs at intersections  represent routers. Traceroute identify these signs and intersections and tells you how far away they are, measured in milliseconds (ms).
 
 The IPv4 TTL and IPv6 Hop Limit headers have the same function. Every router who routes a packet will decrement this value by 1, and if the value reaches 0 the router will discard the packet and return an ICMP Time Exceeded packet to the sender.
 
@@ -370,7 +370,7 @@ Spoofing packets is typically done by attackers with root / system capabilities,
 
  UDP is used for traffic which does not need the resilience and security of TCP, typically applications such as VOIP, but in the modern world more applications are using UDP to support fast packet transfer with resiliency and security built into the higher levels of the OSI model; QUIC is an example of this.
  
- Looking at the UDP Header we can see the same Source and Destination ports in use, bbut no Sequence numbers or Control bits. The protocol has much less overhead, leading to faster transmission of data.
+ Looking at the UDP Header we can see the same Source and Destination ports in use, but no Sequence numbers or Control bits. The protocol has much less overhead, leading to faster transmission of data.
  
  -- ARP --
  
